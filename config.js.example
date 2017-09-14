@@ -1,0 +1,6 @@
+{
+  "slack_token": "abc123",
+  "buffer_twitter_profile": "abc123",
+  "buffer_access_token": "abc123",
+  "channel_name": "general"
+}

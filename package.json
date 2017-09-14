@@ -1,0 +1,21 @@
+{
+  "name": "slack-buffer",
+  "version": "1.0.0",
+  "description": "/buffer for slack",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "claudia create --region eu-west-1 --api-module app --profile slack-buffer",
+    "upload": "claudia update --profile slack-buffer"
+  },
+  "devDependencies": {
+    "claudia": "^2.13.0"
+  },
+  "dependencies": {
+    "claudia-api-builder": "^2.5.1",
+    "node-fetch": "^1.7.3"
+  },
+  "files": [
+    "app.js",
+    "config.json"
+  ]
+}
