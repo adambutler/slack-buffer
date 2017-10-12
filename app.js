@@ -5,6 +5,10 @@ var api = new ApiBuilder()
 
 var config = require('./config')
 
+api.get('/ping', function (request) {
+  return 'pong'
+})
+
 api.get('/', function (request) {
   if (request.queryString.token != config.slack_token) {
     return new api.ApiResponse('Unauthorized - Bad token', { 'Content-Type': 'text/plain' }, 401)

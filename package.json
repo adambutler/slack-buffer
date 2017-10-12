@@ -4,8 +4,8 @@
   "description": "/buffer for slack",
   "main": "index.js",
   "scripts": {
-    "deploy": "claudia create --region eu-west-1 --api-module app --profile slack-buffer",
-    "upload": "claudia update --profile slack-buffer"
+    "deploy": "claudia create --region eu-west-1 --api-module app --profile slack-buffer --memory 512 --timeout 10",
+    "upload": "claudia update --profile slack-buffer --memory 512 --timeout 10"
   },
   "devDependencies": {
     "claudia": "^2.13.0"
